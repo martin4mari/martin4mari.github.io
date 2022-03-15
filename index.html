@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="/style.css" />
+    
     <!--tailwind script-->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
@@ -21,9 +23,7 @@
   <body class="bg-stone-900">
     <!----------header------------>
     <header id="home" class="relative">
-      <button id="menu-button" class="z-100">
-        <img src="/img/bars-solid.svg" class="w-8 h-8 lg:hidden sm:absolute sm:top-5 sm:right-5 invert" alt="menu" />
-      </button>
+
       <div
         class="h-screen grid grid-cols-2 overflow-hidden relative text-white"
       >
@@ -68,7 +68,10 @@
 
         <!-------navbar----------->
 
-
+        <button id="menu-button" class="z-100">
+          <img src="/img/bars-solid.svg" class="w-8 h-8 lg:hidden sm:absolute sm:top-5 sm:right-5 invert" alt="menu" />
+        </button>
+     
         <nav id="navBar" class="w-40 justify-self-end lg:flex text-xs z-50 sm:hidden">
           <ul id="nav" class="">
             <li
@@ -98,8 +101,6 @@
             </li>
           </ul>
         </nav>
-
-                
        
       </div>
     </header>
