@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/style.css" />
-    
+
     <!--tailwind script-->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
@@ -23,7 +23,6 @@
   <body class="bg-stone-900">
     <!----------header------------>
     <header id="home" class="relative">
-
       <div
         class="h-screen grid grid-cols-2 overflow-hidden relative text-white"
       >
@@ -68,11 +67,11 @@
 
         <!-------navbar----------->
 
-        <button id="menu-button" class="z-100">
+        <!--<button id="menu-button" class="z-100">
           <img src="/img/bars-solid.svg" class="w-8 h-8 lg:hidden sm:absolute sm:top-5 sm:right-5 invert" alt="menu" />
-        </button>
-     
-        <nav id="navBar" class="w-40 justify-self-end lg:flex text-xs z-50 sm:hidden">
+        </button> -->
+
+        <nav id="navBar" class="w-40 justify-self-end text-xs z-50 ">
           <ul id="nav" class="">
             <li
               class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
@@ -101,7 +100,6 @@
             </li>
           </ul>
         </nav>
-       
       </div>
     </header>
 
@@ -113,10 +111,10 @@
       </h2>
 
       <div
-        class="w-100 px-40 grid m-10 font-thin lg:grid-cols-2 sm:grid-cols-1"
+        class="w-100 sm:w-100% px-40 grid m-10 font-thin lg:grid-cols-2 sm:grid-cols-1"
       >
         <div
-          class="project-bg w-30 h-full overflow-hidden hover:duration-700 flex bg-cover hover:bg-none flex-row hover:scale-90"
+          class="project-bg w-30 sm:h-80% h-full overflow-hidden hover:duration-700 flex bg-cover hover:bg-none flex-row hover:scale-90"
           style="background-image: url(/img/wp.png)"
         >
           <div
@@ -208,7 +206,7 @@
 
     <!-------about------->
 
-    <section id="about" class="w-full bg-stone-700">
+    <section id="about" class="w-full bg-stone-700 sm:full">
       <div class="m-5 p-5 grid justify-center text-white">
         <h3 class="text-sm text-lime-200 justify-self-center font-bold">
           SOBRE MI
@@ -216,7 +214,7 @@
         <div
           class="about-container flex lg:flex-row sm:flex-col justify-center"
         >
-          <p class="py-5 text-base font-thin w-96 m-10">
+          <p class="py-5 text-base font-thin w-96 sm:m-5 m-10">
             Soy desarrolladora web Jr, las tecnologías que utilizo son HTML,
             CSS, JavaScript. Actualmente estoy incluyendo React Js y Tailwind
             Css a mis prácticas, así como tambien herramientas de diseño como
@@ -241,7 +239,7 @@
 
         <div class="justify-self-center">
           <button
-            class="hover:shadow-md hover:shadow-stone-900/50 p-4 border-transparent rounded-full bg-lime-300"
+            class="hover:shadow-md m-5 hover:shadow-stone-900/50 p-4 border-transparent rounded-full bg-lime-300"
           >
             <a
               class="font-thin text-stone-500"
@@ -311,7 +309,7 @@
           />-->
           <p class="text-xs text-lime-700">EMAIL</p>
 
-          martinmariaaa@gmail.com
+          martinmariaaa@<br />gmail.com
         </li>
         <li class="m-5">
           <!--<img
