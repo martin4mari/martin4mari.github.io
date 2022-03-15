@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <!--tailwind script-->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body class="bg-stone-900">
+    <!----------header------------>
+    <header id="home" class="">
+      <div
+        class="h-screen grid grid-cols-2 overflow-hidden relative text-white"
+      >
+        <img
+          id="bg"
+          class="opacity-40 absolute rotate-90 hover:rotate-280"
+          src="/img/kisspng-point-circle-triangle-networking-5ac18f60b13d90.358429441522634592726.png"
+          alt=""
+        />
+        <div class="m-5 h-120 w-auto flex flex-1 flex-col justify-self-center">
+          <h1 class="m-5 w-100 z-50 text-5xl">
+            Hola, soy <span class="font-bold">Maria Martin</span>
+          </h1>
+          <p class="p-5 w-50 z-50 text-lg">Frontend developer</p>
+          <ul class="flex flex-row m-5 z-50">
+            <li
+              class="hover:scale-110 hover:border-solid hover:border-2 hover: rounded-full hover:border-lime-300"
+            >
+              <a href="https://github.com/martin4mari" target="_blank">
+                <img
+                  class="w-10 p-2 invert"
+                  src="/img/github-brands.svg"
+                  alt=""
+              /></a>
+            </li>
+
+            <li
+              class="hover:scale-110 hover:border-solid hover:border-2 hover: rounded-full hover:border-lime-300"
+            >
+              <a
+                href="https://www.linkedin.com/in/mariamartin-dw/"
+                target="_blank"
+              >
+                <img
+                  class="w-10 p-2 invert"
+                  src="/img/linkedin-in-brands.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-------navbar----------->
+
+        <nav class="w-40 justify-self-end text-xs z-50">
+          <ul id="nav" class="">
+            <li
+              class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
+            >
+              <a href="#home">HOME</a>
+            </li>
+            <li
+              class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
+            >
+              <a href="#projects">PROYECTOS</a>
+            </li>
+            <li
+              class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
+            >
+              <a href="#service">SERVICIOS</a>
+            </li>
+            <li
+              class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
+            >
+              <a href="#about">SOBRE MI</a>
+            </li>
+            <li
+              class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
+            >
+              <a href="#contact">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-------projects------->
+
+    <section id="projects" class="grid">
+      <h2 class="m-10 text-sm text-lime-200 justify-self-center font-bold">
+        PROYECTOS
+      </h2>
+
+      <div
+        class="w-100 px-40 grid m-10 font-thin lg:grid-cols-2 md:grid-cols-1"
+      >
+        <div
+          class="w-30 h-full overflow-hidden hover:duration-700 flex bg-cover hover:bg-none flex-row hover:scale-90"
+          style="background-image: url(/img/wp.png)"
+        >
+          <div
+            class="h-full w-full p-20 bg-lime-200 opacity-0 hover:opacity-100 duration-700"
+          >
+            <h3 class="font-bold py-5">DAILY QUOTE</h3>
+            <p class="py-2">
+              Pequeño proyecto individual que consiste en un app web sencilla
+              que te muestra frases al azar de la famosa serie Breaking Bad.
+            </p>
+            <p class="text-xs underline"><a href="">Ver proyecto</a></p>
+          </div>
+        </div>
+
+        <div
+          class="w-50 h-full overflow-hidden flex bg-cover hover:duration-700 hover:bg-none flex-row hover:scale-90"
+          style="background-image: url(/img/menu.png)"
+        >
+          <div
+            class="h-full w-full p-20 bg-lime-200 opacity-0 hover:opacity-100 duration-700"
+          >
+            <h3 class="font-bold py-5">HOTEL MENU</h3>
+            <p class="py-2">
+              Fue realizado para el Alkemy Challenge frontend. Consiste en una
+              página web en la que se muestran los platos de un hotel utilizando
+              Spoonacular API
+            </p>
+            <p class="text-xs underline"><a href="">Ver proyecto</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------servicios------->
+
+    <section id="service" class="grid justify-center">
+      <h3 class="text-sm text-lime-200 font-bold m-10 justify-self-center">
+        SERVICIOS
+      </h3>
+
+      <div class="flex flex-row p-5 text-white bg-stone-700 m-10 rounded">
+        <div class="w-40 m-10 p-5 bg-stone-300 text-stone-900 rounded">
+          <div
+            class="w-20 h-20 m-5 p-5 rounded-full bg-lime-400 justify-center contrast-50"
+          >
+            <img class="w-20 h-10" src="/img/pen-nib-solid.svg" alt="pen" />
+          </div>
+          <h2 class="font-bold">Planificación</h2>
+          <p class="text-sm py-2">
+            Ideación e investigación para resultados más completos y
+            personalizados
+          </p>
+        </div>
+
+        <div class="w-40 m-10 p-5 bg-stone-300 text-stone-900 rounded">
+          <div
+            class="w-20 h-20 m-5 p-5 rounded-full bg-lime-400 flex justify-center contrast-50"
+          >
+            <img class="w-15 h-10" src="/img/mobile-solid.svg" alt="mobile" />
+          </div>
+          <h2 class="font-bold">Diseño</h2>
+          <p class="text-sm py-2">
+            Diseños responsive adaptables a todos los dispositivos
+          </p>
+        </div>
+
+        <div class="w-40 m-10 p-5 bg-stone-300 text-stone-900 rounded">
+          <div
+            class="w-20 h-20 m-5 p-5 rounded-full bg-lime-400 justify-center contrast-50"
+          >
+            <img
+              class=""
+              src="/img/handshake-angle-solid.svg"
+              alt="handshake"
+            />
+          </div>
+
+          <h2 class="font-bold">Compromiso</h2>
+          <p class="text-sm py-2">
+            Empatizo con los objetivos y lineamientos del proyecto para óptimos
+            resultados
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------about------->
+
+    <section id="about" class="bg-stone-700">
+      <div class="m-5 p-5 grid text-white">
+        <h3 class="text-sm text-lime-200 justify-self-center font-bold">
+          SOBRE MI
+        </h3>
+        <div class="flex flex-row justify-center">
+          <p class="py-5 text-base font-thin w-96 m-10">
+            Soy desarrolladora web Jr, las tecnologías que utilizo son HTML,
+            CSS, JavaScript. Actualmente estoy incluyendo React Js y Tailwind
+            Css a mis prácticas, así como tambien herramientas de diseño como
+            Canva y Figma. He trabajado en proyectos propios y comunidades de
+            otros junior para adquirir experiencia. Tengo muchas ganas de seguir
+            aprendiendo así como de enfrentar desafíos y colaborar en equipo. De
+            la mano de esta maravillosa herramienta que es la programación, me
+            gustaría aportar ideas innovadoras, creativas y de valor a los
+            proyectos.
+            <br />
+            <br />
+          </p>
+
+          <div
+            class="w-56 h-56 rounded-full justify-self-center overflow-hidden my-20"
+          >
+            <img
+              class="sm:w-60 md:w-30"
+              src="/img/bw profile.jpeg"
+              alt="Maria Martin"
+            />
+          </div>
+        </div>
+
+        <div class="justify-self-center">
+          <button
+            class="hover:shadow-md hover:shadow-stone-900/50 p-4 border-transparent rounded-full bg-lime-300"
+          >
+            <a
+              class="font-thin text-stone-500"
+              href="https://drive.google.com/file/d/1qp5Ol6rxJKwW6UNHcWL277bEq2bGNTt0/view?usp=sharing"
+              target="_blank"
+              >Descargar CV</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-------Contact------->
+
+    <section id="contact" class="h-full grid grid-cols-1">
+      <h3 class="text-sm text-lime-200 justify-self-center font-bold">
+        CONTACTO
+      </h3>
+      <ul
+        class="my-10 flex flex-row justify-self-center bg-stone-300 rounded p-10"
+      >
+        <li class="m-5">
+          <!--  
+            <img
+              class="w-8 p-2"
+              src="/img/github-brands.svg"
+              alt="github"
+            />      -->
+          <p class="text-xs text-lime-700">REPO</p>
+          <a
+            class="hover:opacity-90 hover:opacity-80"
+            href="https://github.com/martin4mari"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+        <li class="m-5">
+          <!--            <img
+              class="w-8 p-2"
+              src="/img/linkedin-in-brands.svg"
+              alt="linkedin"
+            />-->
+          <p class="text-xs text-lime-700">RED</p>
+
+          <a
+            class="hover:opacity-90 hover:opacity-80"
+            href="https://www.linkedin.com/in/mariamartin-dw/"
+            target="_blank"
+            >LinkedIn
+          </a>
+        </li>
+        <li class="m-5">
+          <!--<img class="w-8 p-2" src="/img/phone-solid.svg" alt="phone" />-->
+          <p class="text-xs text-lime-700">MOVIL</p>
+          <a
+            class="hover:opacity-90 hover:opacity-80"
+            href="https://wa.me/542954379999"
+            target="_blank"
+            >+549 2954 379999</a
+          >
+        </li>
+        <li class="m-5">
+          <!--<img
+            class="w-8 p-2"
+            src="/img/envelope-solid.svg"
+            alt="email"
+          />-->
+          <p class="text-xs text-lime-700">EMAIL</p>
+
+          martinmariaaa@gmail.com
+        </li>
+        <li class="m-5">
+          <!--<img
+            class="w-7 p-2"
+            src="/img/location-dot-solid.svg"
+            alt="location"
+          />-->
+          <p class="text-xs text-lime-700">CIUDAD</p>
+
+          Córdoba, Argentina
+        </li>
+      </ul>
+    </section>
+
+    <!-------footer------->
+
+    <footer>
+      <div class="bg-stone-800 text-xs w-full text-lime-300 text-center py-5">
+        <p class="hover:animate-bounce">
+          <a href="">by Maria</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
