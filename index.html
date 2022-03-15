@@ -20,7 +20,10 @@
   </head>
   <body class="bg-stone-900">
     <!----------header------------>
-    <header id="home" class="">
+    <header id="home" class="relative">
+      <button id="menu-button" class="z-100">
+        <img src="/img/bars-solid.svg" class="w-8 h-8 lg:hidden sm:absolute sm:top-5 sm:right-5 invert" alt="menu" />
+      </button>
       <div
         class="h-screen grid grid-cols-2 overflow-hidden relative text-white"
       >
@@ -65,7 +68,8 @@
 
         <!-------navbar----------->
 
-        <nav class="w-40 justify-self-end text-xs z-50">
+
+        <nav id="navBar" class="w-40 justify-self-end lg:flex text-xs z-50 sm:hidden">
           <ul id="nav" class="">
             <li
               class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
@@ -94,6 +98,9 @@
             </li>
           </ul>
         </nav>
+
+                
+       
       </div>
     </header>
 
@@ -105,14 +112,14 @@
       </h2>
 
       <div
-        class="w-100 px-40 grid m-10 font-thin lg:grid-cols-2 md:grid-cols-1"
+        class="w-100 px-40 grid m-10 font-thin lg:grid-cols-2 sm:grid-cols-1"
       >
         <div
-          class="w-30 h-full overflow-hidden hover:duration-700 flex bg-cover hover:bg-none flex-row hover:scale-90"
+          class="project-bg w-30 h-full overflow-hidden hover:duration-700 flex bg-cover hover:bg-none flex-row hover:scale-90"
           style="background-image: url(/img/wp.png)"
         >
           <div
-            class="h-full w-full p-20 bg-lime-200 opacity-0 hover:opacity-100 duration-700"
+            class="project-container h-full w-full p-20 bg-lime-200 opacity-0 hover:opacity-100 duration-700"
           >
             <h3 class="font-bold py-5">DAILY QUOTE</h3>
             <p class="py-2">
@@ -124,11 +131,11 @@
         </div>
 
         <div
-          class="w-50 h-full overflow-hidden flex bg-cover hover:duration-700 hover:bg-none flex-row hover:scale-90"
+          class="project-bg w-50 h-full overflow-hidden flex bg-cover hover:duration-700 hover:bg-none flex-row hover:scale-90"
           style="background-image: url(/img/menu.png)"
         >
           <div
-            class="h-full w-full p-20 bg-lime-200 opacity-0 hover:opacity-100 duration-700"
+            class="project-container h-full w-full p-20 bg-lime-200 opacity-0 hover:opacity-100 duration-700"
           >
             <h3 class="font-bold py-5">HOTEL MENU</h3>
             <p class="py-2">
@@ -149,7 +156,10 @@
         SERVICIOS
       </h3>
 
-      <div class="flex flex-row p-5 text-white bg-stone-700 m-10 rounded">
+      <div
+        id="service_card"
+        class="sm:flex-col flex lg:flex-row p-5 text-white bg-stone-700 m-10 rounded"
+      >
         <div class="w-40 m-10 p-5 bg-stone-300 text-stone-900 rounded">
           <div
             class="w-20 h-20 m-5 p-5 rounded-full bg-lime-400 justify-center contrast-50"
@@ -197,12 +207,14 @@
 
     <!-------about------->
 
-    <section id="about" class="bg-stone-700">
-      <div class="m-5 p-5 grid text-white">
+    <section id="about" class="w-full bg-stone-700">
+      <div class="m-5 p-5 grid justify-center text-white">
         <h3 class="text-sm text-lime-200 justify-self-center font-bold">
           SOBRE MI
         </h3>
-        <div class="flex flex-row justify-center">
+        <div
+          class="about-container flex lg:flex-row sm:flex-col justify-center"
+        >
           <p class="py-5 text-base font-thin w-96 m-10">
             Soy desarrolladora web Jr, las tecnologías que utilizo son HTML,
             CSS, JavaScript. Actualmente estoy incluyendo React Js y Tailwind
@@ -213,12 +225,10 @@
             la mano de esta maravillosa herramienta que es la programación, me
             gustaría aportar ideas innovadoras, creativas y de valor a los
             proyectos.
-            <br />
-            <br />
           </p>
 
           <div
-            class="w-56 h-56 rounded-full justify-self-center overflow-hidden my-20"
+            class="img-container w-56 h-56 rounded-full justify-self-center overflow-hidden my-20 sm:self-center"
           >
             <img
               class="sm:w-60 md:w-30"
@@ -250,7 +260,7 @@
         CONTACTO
       </h3>
       <ul
-        class="my-10 flex flex-row justify-self-center bg-stone-300 rounded p-10"
+        class="contact-list my-10 flex lg:flex-row justify-self-center bg-stone-300 sm:flex-col rounded p-10"
       >
         <li class="m-5">
           <!--  
