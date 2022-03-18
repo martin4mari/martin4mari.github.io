@@ -22,6 +22,7 @@
   </head>
   <body class="bg-stone-900">
     <!----------header------------>
+
     <header id="home" class="relative">
       <div
         class="h-screen grid grid-cols-2 overflow-hidden relative text-white"
@@ -36,7 +37,8 @@
           class="m-5 h-120 w-auto flex flex-1 flex-col justify-self-center xl:m-10"
         >
           <h1 class="m-5 w-100 z-50 text-sm">
-            Hola, soy <span class="font-bold text-5xl xl:text-6xl">Maria Martin</span>
+            Hola, soy
+            <span class="font-bold text-5xl xl:text-6xl">Maria Martin</span>
           </h1>
           <p class="p-5 w-50 z-50 text-lg">Frontend developer</p>
           <ul class="flex flex-row m-5 z-50">
@@ -45,7 +47,7 @@
             >
               <a href="https://github.com/martin4mari" target="_blank">
                 <img
-                  class="w-10 p-2 invert"
+                  class="h-10 w-10 p-2 invert"
                   src="/img/github-brands.svg"
                   alt=""
               /></a>
@@ -59,7 +61,7 @@
                 target="_blank"
               >
                 <img
-                  class="w-10 p-2 invert"
+                  class="h-10 w-10 p-2 invert"
                   src="/img/linkedin-in-brands.svg"
                   alt=""
               /></a>
@@ -69,15 +71,18 @@
 
         <!-------navbar----------->
 
-      <button id="menu-button" class="z-100">
-          <img src="/img/bars-solid.svg" class="w-8 h-8 lg:hidden sm:hidden xl:hidden invert" alt="menu" />
+        <button id="menu-button" class="z-100">
+          <img
+            src="/img/bars-solid.svg"
+            class="w-8 h-8 lg:hidden sm:hidden xl:hidden invert"
+            alt="menu"
+          />
         </button>
 
         <nav
           id="navBar"
           class="w-40 justify-self-end text-xs z-50 xl:text-sm xl:my-10 absolute"
         >
-        
           <ul id="nav" class="">
             <li
               class="p-5 hover:-translate-x-4 hover:duration-700 hover:text-lime-300"
@@ -232,7 +237,7 @@
         <div
           class="about-container flex lg:flex-row sm:flex-col justify-center"
         >
-          <p class="py-5 text-base font-thin w-96 sm:m-5 m-10 lg:mx-40 ">
+          <p class="py-5 text-base font-thin w-96 sm:m-5 m-10 lg:mx-40">
             Soy desarrolladora web Jr, las tecnologías que utilizo son HTML,
             CSS, JavaScript. Actualmente estoy incluyendo React Js y Tailwind
             Css a mis prácticas, así como tambien herramientas de diseño como
@@ -277,7 +282,7 @@
         CONTACTO
       </h3>
       <ul
-        class="contact-list my-10 flex lg:flex-row lg:justify-self-center bg-stone-300 sm:flex-col rounded p-10"
+        class="contact-list my-10 flex lg:flex-row justify-self-center bg-stone-300 sm:flex-col rounded p-10"
       >
         <li class="m-5">
           <!--  
@@ -353,6 +358,6 @@
     </footer>
 
     <!--script-->
-    <script src="main.js"> </script>
+    <script src="main.js"></script>
   </body>
 </html>

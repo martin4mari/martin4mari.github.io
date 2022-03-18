@@ -89,6 +89,7 @@
 
   #service h3 {
     margin: 2px;
+
   }
 
   #about {
@@ -106,7 +107,7 @@
   .about-container p {
     margin: 0;
     padding: 10px;
-    font-size: 10px;
+    font-size: 15px;
     width: 80%;
   }
 
@@ -115,8 +116,13 @@
     align-self: center;
   }
 
+  #contact h3{
+    padding: 20px 0;
+  }
+
   .contact-list {
     flex-direction: column;
     width: 80%;
+    
   }
 }
