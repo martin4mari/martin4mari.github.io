@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="icon" href="./img/Group 4.png">
   <link rel="stylesheet" href="/style.css" />
 
   <!--tailwind script-->
@@ -16,23 +17,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 
-  <title>Portfolio</title>
+
+  <title>Maria Martin</title>
 </head>
 
 <body class="bg-stone-900">
+
   <!----------header------------>
 
   <header id="home" class="relative">
+
     <div class="h-screen grid grid-cols-2 overflow-hidden relative text-white">
       <img id="bg" class="xl:m-20 opacity-40 absolute rotate-90 hover:rotate-280"
         src="/img/kisspng-point-circle-triangle-networking-5ac18f60b13d90.358429441522634592726.png" alt="" />
       <div class="m-5 h-120 w-auto flex flex-1 flex-col justify-self-center xl:m-10">
-        <h1 class="m-5 w-100 z-50 text-sm">
+        <h1 id="h1" class="m-5 w-100 z-50 text-sm">
           Hola, soy
           <span class="font-bold text-5xl xl:text-6xl">Maria Martin</span>
         </h1>
-        <p class="p-5 w-50 z-50 text-lg">Frontend developer</p>
-        <ul class="flex flex-row m-5 z-50">
+        <p class="p-header p-5 w-50 z-50 text-lg">Frontend developer <span class="span">|</span></p>
+        <ul class="socials-header flex flex-row m-5 z-50">
           <li class="hover:scale-110 hover:border-solid hover:border-2 hover: rounded-full hover:border-lime-300">
             <a href="https://github.com/martin4mari" target="_blank">
               <img class="h-10 w-10 p-2 invert" src="/img/github-brands.svg" alt="" /></a>
@@ -76,11 +80,11 @@
   <!-------projects------->
 
   <section id="projects" class="grid">
-    <h2 class="m-10 text-sm text-lime-200 justify-self-center font-bold">
+    <h2 class="h2-projects m-10 text-sm text-lime-200 justify-self-center font-bold">
       PROYECTOS
     </h2>
 
-    <div class="w-100 sm:w-100% px-40 grid m-10 font-thin lg:grid-cols-2 sm:grid-cols-1">
+    <div class="projects w-100 sm:w-100% px-40 grid m-10 font-thin lg:grid-cols-2 sm:grid-cols-1">
       <div
         class="project-bg w-30 sm:h-80% h-full overflow-hidden hover:duration-700 flex bg-cover hover:bg-none flex-row hover:scale-90"
         style="background-image: url(/img/wp.png)">
@@ -114,12 +118,12 @@
     </div>
   </section>
 
-  <!-------servicios------->
+  <!-------services------->
 
   <section id="service" class="grid justify-center">
-    <h3 class="text-sm text-lime-200 font-bold p-5 m-10 justify-self-center">
+    <h2 class="h2-services text-sm text-lime-200 font-bold p-5 m-10 justify-self-center">
       SERVICIOS
-    </h3>
+    </h2>
 
     <div id="service_card" class="sm:flex-col flex lg:flex-row p-5 text-white bg-stone-700 m-10 rounded">
       <div class="w-40 m-10 p-5 bg-stone-300 text-stone-900 rounded">
@@ -129,7 +133,7 @@
         <h2 class="font-bold">Planificación</h2>
         <p class="text-sm py-2">
           Ideación e investigación para resultados más eficientes y
-          personalizados con un enfoque centrado en el usuario. 
+          personalizados con un enfoque centrado en el usuario.
         </p>
       </div>
 
@@ -159,36 +163,44 @@
 
   <!-------about------->
 
-  <section id="about" class="w-full bg-stone-700 sm:full">
-    <div class="m-5 p-5 grid justify-center text-white">
-      <h3 class="text-sm text-lime-200 justify-self-center font-bold">
-        SOBRE MI
-      </h3>
-      <div class="about-container flex lg:flex-row sm:flex-col justify-center">
-        <p class="py-5 text-base font-thin w-96 sm:m-5 m-10 lg:mx-40">
-          Soy desarrolladora web junior, hace más de un año me encontré con el
-          mundo de la programación y me conquistó.
-          <br />
-          Me oriento a frontend con tecnologías como HTML, CSS y
-          JavaScript. Realicé capacitaciones en Angular y ReactJs pero utilizo principalmente VueJS.
-          Me encanta utilizar TailwindCss aunque Botstrap es también una excelente herramienta.
-          Tengo conocimientos de full stack con Java, programación orientada a objetos, nociones de Spring Boot y
-          bases de datos relacionales con MySQL.
-          <br />
-          Soy una persona curiosa, me gusta investigar, aprender y reflexionar
-          de diversas temáticas. Ansío seguir creciendo en esta profesión, actualmente formo parte del proyecto
-          FortGotten
-          como frontend junto a un gran equipo de diseñadores y programadores.
-        </p>
+  <section id="about" class="w-full bg-stone-700 sm:full grid justify-center ">
+    <h3 class="h3-about text-sm text-lime-200 justify-self-center font-bold lg:mt-10 mt-5">
+      SOBRE MI
+    </h3>
+    <div class="about grid justify-center text-white">
 
-        <div class="img-container w-56 h-56 rounded-full justify-self-center overflow-hidden my-20 sm:self-center">
+      <div class="about-container flex lg:flex-row sm:flex-col justify-around lg:mx-10 ">
+        <div class="img-container w-48 h-48 rounded-full justify-self-center overflow-hidden sm:self-center lg:mx-10">
           <img class="sm:w-60 md:w-30" src="/img/bw profile.jpeg" alt="Maria Martin" />
         </div>
+        <p class="pt-5 text-base font-thin w-96 sm:m-5">
+          Soy desarrolladora web junior, hace más de un año me encontré con el
+          mundo de la programación y me conquistó.
+          <br>
+
+          Me oriento a frontend con tecnologías como HTML, CSS y
+          JavaScript. Realicé capacitaciones en Angular y ReactJs pero utilizo principalmente VueJS.
+          Me encanta utilizar TailwindCss aunque Bootstrap es también una excelente herramienta.
+          <br>
+          Tengo conocimientos de full stack con Java, programación orientada a objetos, nociones de Spring Boot y
+          bases de datos relacionales con MySQL.
+
+
+        </p>
+        <p class="pt-5 text-base font-thin w-96 sm:m-5 lg:mx-10 ">
+
+
+          Soy una persona curiosa, me gusta investigar, aprender y reflexionar
+          de diversas temáticas. Ansío seguir creciendo en esta profesión, actualmente formo parte del proyecto
+          FortGotten como frontend junto a un gran equipo de diseñadores y programadores.
+        </p>
+       
       </div>
 
       <div class="justify-self-center">
-        <button class="hover:shadow-md m-5 hover:shadow-stone-900/50 p-4 border-transparent rounded-full bg-lime-300">
-          <a class="font-thin text-stone-500"
+        <button
+          class="hover:shadow-md m-5 hover:shadow-stone-900/50 p-4 border-transparent rounded-full bg-lime-300 hover:bg-lime-400">
+          <a class="font-thin text-stone-500 "
             href="https://drive.google.com/file/d/1qp5Ol6rxJKwW6UNHcWL277bEq2bGNTt0/view?usp=sharing"
             target="_blank">Descargar CV</a>
         </button>
@@ -199,7 +211,7 @@
   <!-------Contact------->
 
   <section id="contact" class="h-full grid grid-cols-1">
-    <h3 class="text-sm text-lime-200 justify-self-center font-bold">
+    <h3 class="h3-contact text-sm text-lime-200 justify-self-center font-bold lg:m-10 m-5">
       CONTACTO
     </h3>
     <ul class="contact-list my-10 flex lg:flex-row justify-self-center bg-stone-300 sm:flex-col rounded p-10">
@@ -248,7 +260,6 @@
             alt="location"
           />-->
         <p class="text-xs text-lime-700">CIUDAD</p>
-
         Córdoba, Argentina
       </li>
     </ul>
@@ -264,8 +275,12 @@
     </div>
   </footer>
 
-  <!--script-->
+  <!--scripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
   <script src="main.js"></script>
+
 </body>
 
 </html>
