@@ -31,6 +31,9 @@ gsap.fromTo(
 
 gsap.registerPlugin(ScrollTrigger);
 
+// const tl2 = gsap.timeline({ scrollTrigger: { trigger: ".h2-projects",
+// scrub:true } });
+
 gsap.from(".h2-projects", {
   y: 200,
   duration: 1,
@@ -63,23 +66,21 @@ gsap.from("#services", {
   scrollTrigger: "#services",
 });
 
-
 gsap.from(".h3-about", {
   y: 200,
-  duration: 1,
+  duration: 0.5,
   scrollTrigger: ".h3-about",
 });
-gsap.from(".about", {
-  y: 200,
+gsap.from(".img-container", {
+  x: -700,
   duration: 1,
-  scrollTrigger: ".about",
+  scrollTrigger: ".img-container",
 });
-gsap.from("#about", {
-  y: 200,
+gsap.from(".about-p", {
+  x: 700,
   duration: 1,
-  scrollTrigger: "#about",
+  scrollTrigger: ".about-p",
 });
-
 
 gsap.from(".h3-contact", {
   y: 100,
@@ -89,10 +90,10 @@ gsap.from(".h3-contact", {
 gsap.from(".contact-list", {
   y: 100,
   duration: 1,
-  scrollTrigger:".contact-list",
+  scrollTrigger: ".contact-list",
 });
 gsap.from("#contact", {
   y: 100,
-  duration: 0.4,
+  duration: 0.5,
   scrollTrigger: "#contact",
 });
