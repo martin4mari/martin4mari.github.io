@@ -3,13 +3,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-#bg {
+/* #bg {
   transition: all 10s;
 }
 #bg:hover {
   transition: all 10s;
   transform: translateY(-100px);
-}
+} */
 
 #nav li {
   transition: all 1s;

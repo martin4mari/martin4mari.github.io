@@ -97,3 +97,12 @@ gsap.from("#contact", {
   duration: 0.5,
   scrollTrigger: "#contact",
 });
+
+
+
+// const tl2= gsap.timeline({repeat:-1, duration:5})
+
+// tl2.from("#div1",{background:"yellow", ease:"easeInOut"})
+// .to("#div2",{background:"yellow", ease:"easeInOut"})
+// .from("#div3",{background:"yellow", ease:"easeInOut"})
+// .to("#div4",{background:"yellow", ease:"easeInOut"});
